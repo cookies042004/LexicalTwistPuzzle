@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
 /**
- * LexicalTwistPuzzle UC4: Check Reverse Relationship
+ * LexicalTwistPuzzle UC5: Transform Word if Reverse Match
  *
- * Determine whether the second word is the reversed version of the first word
- * (case-insensitive).
+ * This class Apply transformations when the second word is the reverse of the first.
  *
  * @Developer
- * @version 4.0
+ * @version 5.0
  * */
 
 
@@ -34,7 +33,10 @@ public class LexicalTwistPuzzle {
         String reversed = new StringBuilder(firstWord).reverse().toString();
 
         if (reversed.equalsIgnoreCase(secondWord)) {
-            System.out.println("Second word is the reverse of first word.");
+            System.out.println("Reverse Matched");
+            String lower = reversed.toLowerCase();
+            String transformed = lower.replaceAll("[aeiou]", "@");
+            System.out.println("Transformed word: " + transformed);
         } else {
             System.out.println("Not a reverse match.");
         }
