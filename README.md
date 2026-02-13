@@ -1,6 +1,6 @@
-# Lexical Twist Puzzle
+# 🧩 Lexical Twist Puzzle
 
-## Application Overview
+## 📌 Application Overview
 
 The **Lexical Twist Puzzle** is a console-based Java application that processes two words and performs transformations based on logical conditions.
 
@@ -15,29 +15,29 @@ The application evolves progressively from basic procedural logic to a **fully m
 
 ---
 
-# Use Case Evolution
+# 📚 Use Case Evolution
 
 ---
 
-## UC1: Display Puzzle Title
+## ✅ UC1: Display Puzzle Title
 
-### Goal
+### 🎯 Goal
 Display a static message indicating the purpose of the application.
 
-### Actor
+### 👤 Actor
 User
 
-### Flow
+### 🔄 Flow
 1. User runs the program
 2. Program prints `"Lexical Twist Puzzle"`
 3. Program exits
 
-### Key Concepts Used
+### 🧠 Key Concepts Used
 - Class and `main()` method
 - Print statements
 - Program entry point
 
-### Drawbacks
+### ⚠ Drawbacks
 - Not interactive
 - No user input
 - No puzzle logic
@@ -47,17 +47,17 @@ User
 
 ---
 
-## UC2: Accept Word Inputs
+## ✅ UC2: Accept Word Inputs
 
-### Goal
+### 🎯 Goal
 Accept two words from the user for puzzle processing.
 
-### Key Concepts Used
+### 🧠 Key Concepts Used
 - `Scanner` class
 - User input handling
 - Variable storage
 
-### Drawbacks
+### ⚠ Drawbacks
 - No validation
 - No logical processing
 - Direct input handling in `main()`
@@ -66,17 +66,17 @@ Accept two words from the user for puzzle processing.
 
 ---
 
-## UC3: Validate Single Word Constraint
+## ✅ UC3: Validate Single Word Constraint
 
-### Goal
+### 🎯 Goal
 Ensure each input contains only one word.
 
-### Flow
+### 🔄 Flow
 - Check for whitespace
 - Reject multi-word input
 - Stop execution safely
 
-### Key Concepts
+### 🧠 Key Concepts
 - String validation
 - Defensive programming
 - Early return strategy
@@ -91,17 +91,17 @@ Ensure each input contains only one word.
 
 ---
 
-## UC4: Check Reverse Relationship
+## ✅ UC4: Check Reverse Relationship
 
-### Goal
+### 🎯 Goal
 Determine if the second word is the reverse of the first word (case-insensitive).
 
-### Key Concepts
+### 🧠 Key Concepts
 - `StringBuilder.reverse()`
 - `equalsIgnoreCase()`
 - Conditional branching
 
-### Drawbacks
+### ⚠ Drawbacks
 - Reverse logic mixed with input handling
 - `main()` becoming crowded
 - Poor modularity
@@ -111,21 +111,21 @@ Determine if the second word is the reverse of the first word (case-insensitive)
 
 ---
 
-## UC5: Transform Word if Reverse Match
+## ✅ UC5: Transform Word if Reverse Match
 
-### Goal
+### 🎯 Goal
 If reverse match:
 - Reverse first word
 - Convert to lowercase
 - Replace vowels with `@`
 - Output transformed word
 
-### Key Concepts
+### 🧠 Key Concepts
 - String manipulation
 - Regex replacement
 - Character processing
 
-### Drawbacks
+### ⚠ Drawbacks
 - Business logic tightly coupled
 - Not reusable
 - Hard to extend
@@ -134,15 +134,15 @@ If reverse match:
 
 ---
 
-## UC6: Combine Words if Not Reverse
+## ✅ UC6: Combine Words if Not Reverse
 
-### Goal
+### 🎯 Goal
 If not reverse:
 - Combine words
 - Convert to uppercase
 - Count vowels and consonants
 
-### Key Concepts
+### 🧠 Key Concepts
 - String concatenation
 - `toUpperCase()`
 - Character classification
@@ -156,23 +156,23 @@ If not reverse:
 
 ---
 
-## UC7: Output Based on Vowel–Consonant Count
+## ✅ UC7: Output Based on Vowel–Consonant Count
 
-### Goal
+### 🎯 Goal
 Print characters based on distribution rules.
 
-### Flow
+### 🔄 Flow
 - If vowels > consonants → Print first 2 unique vowels
 - If consonants > vowels → Print first 2 unique consonants
 - If equal → Print equality message
 
-### Key Concepts
+### 🧠 Key Concepts
 - Ordered filtering
 - Duplicate removal
 - Conditional logic
 - `LinkedHashSet` for order preservation
 
-### Drawbacks
+### ⚠ Drawbacks
 - Logic still partially coupled
 - Limited abstraction
 
@@ -180,12 +180,12 @@ Print characters based on distribution rules.
 
 ---
 
-## UC8: Fully Modular & OOPS-Compliant Puzzle System
+## ✅ UC8: Fully Modular & OOPS-Compliant Puzzle System
 
-### Goal
+### 🎯 Goal
 Deliver a clean, reusable, and extensible puzzle analyzer.
 
-### Flow
+### 🔄 Flow
 1. Inputs collected in `main()`
 2. Validation handled in `WordValidator`
 3. Business logic handled in `LexicalAnalyzer`
@@ -193,7 +193,7 @@ Deliver a clean, reusable, and extensible puzzle analyzer.
 
 ---
 
-# Final Architecture
+# 🏗 Final Architecture
 
 ```
 LexicalTwistPuzzle  →  Input & Output
@@ -205,7 +205,7 @@ LexicalAnalyzer    →  Puzzle Logic
 
 ---
 
-# OOPS Principles Demonstrated
+# 🧠 OOPS Principles Demonstrated
 
 ## ✔ Encapsulation
 All string-processing logic resides inside analyzer classes.
@@ -240,7 +240,7 @@ New features can be added easily:
 
 ---
 
-# Technologies Used
+# 🛠 Technologies Used
 
 - Java
 - OOPS Principles
@@ -265,7 +265,7 @@ New features can be added easily:
 
 ---
 
-# Learning Outcome
+# 🚀 Learning Outcome
 
 This project demonstrates:
 
@@ -277,7 +277,7 @@ This project demonstrates:
 
 ---
 
-# Version History
+# 📌 Version History
 
 | Version | Description |
 |----------|------------|
@@ -292,7 +292,7 @@ This project demonstrates:
 
 ---
 
-# Final Note
+# 🎯 Final Note
 
 The Lexical Twist Puzzle demonstrates how a simple console program can evolve into a structured, modular, and maintainable system using proper design principles.
 
