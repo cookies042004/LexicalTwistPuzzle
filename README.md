@@ -164,8 +164,7 @@ This project demonstrates:
 
 # 👨‍💻 Developer
 
-**Akhil Puri**  
-B.Tech CSE | Java & System Design Enthusiast
+**Akhil Puri**
 
 ---
 
