@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
 /**
- * LexicalTwistPuzzle UC3: Validate Single Word Constraint
+ * LexicalTwistPuzzle UC4: Check Reverse Relationship
  *
- * This class Ensure that each input contains only one word.
+ * Determine whether the second word is the reversed version of the first word
+ * (case-insensitive).
  *
  * @Developer
- * @version 3.0
+ * @version 4.0
  * */
 
 
@@ -30,7 +31,13 @@ public class LexicalTwistPuzzle {
             return;
         }
 
-        System.out.println("Valid word: " + firstWord + " " + secondWord);
+        String reversed = new StringBuilder(firstWord).reverse().toString();
+
+        if (reversed.equalsIgnoreCase(secondWord)) {
+            System.out.println("Second word is the reverse of first word.");
+        } else {
+            System.out.println("Not a reverse match.");
+        }
 
         sc.close();
     }
